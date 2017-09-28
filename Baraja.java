@@ -1,6 +1,7 @@
 import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
+import tics200.*;
 
 public class Baraja {
 
@@ -12,6 +13,8 @@ public class Baraja {
         for(Numero numero: Numero.values()) {
             Carta carta1 = new Corazon(numero);
             Carta carta2 = new Rombo(numero);
+            Carta carta4 = new Espada(numero);
+            Carta carta4 = new Trebol(numero);
             /*
                 Acá deben completar el constructor de forma de
                 poblar la lista de cartas con todas las cartas de
@@ -23,7 +26,7 @@ public class Baraja {
         }
     }
 
-    // acá falta un método :) Ve el método main de la clase Main
+    public void getCarta()// acá falta un método :) Ve el método main de la clase Main
 
     public void barajar() {
         Collections.shuffle(this.cartas);
